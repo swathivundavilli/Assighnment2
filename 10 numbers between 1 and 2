@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
+{
+    int i;
+    float randomnum;
+    srand(time(NULL));
+ printf("10 random numbers between 1 and 2 (excluding 2):\n");
+ for (i = 0; i < 10; ++i)
+ {
+randomnum = (float)rand()/(float)(RAND_MAX/1.0) + 1.0;
+        printf("%f\n", randomnum);
+    }
+    return 0;
+}
